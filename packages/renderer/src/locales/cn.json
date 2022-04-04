@@ -1,0 +1,113 @@
+{
+    "title": "轻记账",
+    "global": {
+        "confirm": "确认"
+    },
+    "heads": {
+        "day": "日期",
+        "type": "类型",
+        "account": "账户",
+        "money": "金额",
+        "firstClass": "一类",
+        "secondClass": "二类",
+        "note": "备注"
+    },
+    "type": {
+        "spending": "支出",
+        "income": "收入",
+        "transfer": "转账"
+    },
+    "main": {
+        "addBill": "记账",
+        "reactiveInfo": "一类 | 类别 | 支出账户",
+        "currency": "CNY",
+        "moneyAverage": "单笔平均",
+        "moneySum": "支出总额",
+        "spendingByDay": "支出（日）",
+        "successAdd": "你成功添加了一笔账单",
+        "removeInfo": "你移除了一笔账单",
+        "changeMonth": "切换操作月份",
+        "confirm": "确认",
+        "changeMonthInfo": "切换到了{year}年{month}月"
+    },
+    "navigator": {
+        "normal": {
+            "name": "常规",
+            "addBill": "记账",
+            "statistics": "统计数据",
+            "automaticBill": "自动记账"
+        },
+        "analysis": {
+            "name": "分析",
+            "spendingAnalysis": "支出分析",
+            "incomeAnalysis": "收入分析"
+        },
+        "settings": {
+            "name": "设置",
+            "basic": "基本",
+            "category": "类别"
+        }
+    },
+    "statistics": {
+        "monthBegin": "月初资产",
+        "budgets": {
+            "name": "预算",
+            "plan": "计划",
+            "used": "已用",
+            "remain": "现存",
+            "dailyPlan": "计划每日",
+            "dailyRemain": "现存每日",
+            "daily": "每日预算"
+        },
+        "current": "现净资产",
+        "currentTotal": "现总资产",
+        "monthBeginTotal": "月初总资产",
+        "setPlanSuccess": "成功修改预算为{newPlan}",
+        "setPlan": "修改预算"
+    },
+    "spendingAnalysis": {
+        "name": "支出分析",
+        "spendingByFirstClass": "一类支出分析(平均)"
+    },
+    "settings": {
+        "basic": {
+            "language": "语言",
+            "category": "类别",
+            "confirm": "确认",
+            "changeVal": "增加 | 覆盖",
+            "addInfo": "在{type}中添加了{add}",
+            "removeInfo": "在{type}中删除了{remove}",
+            "replaceInfo": "将{from}修改成了{to}",
+            "selectError": "未进行选择！",
+            "op": {
+                "add": "添加",
+                "remove": "移除",
+                "replace": "替换"
+            }
+        }
+    },
+    "incomeAnalysis": {
+        "year": "年度分析",
+        "month": "月度分析",
+        "sum": "总数",
+        "average": "平均",
+        "count": "数目"
+    },
+    "automaticBill": {
+        "automaticBillList": "当前自动记账脚本列表",
+        "bill": "账单",
+        "startDate": "开始日期",
+        "endDate": "结束日期",
+        "frequency": "频率",
+        "everyMonth": "每月",
+        "everyWeek": "每周",
+        "customize": "自定义",
+        "interval": "每{day}天",
+        "index": "序号",
+        "removeInfo": "移除了序号{index}的自动账单",
+        "removeFail": "没有这个序号的自动账单！",
+        "remove": "移除",
+        "removeHeader": "移除自动账单",
+        "addSuccess": "成功添加了自动账单"
+    }
+}

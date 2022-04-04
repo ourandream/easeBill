@@ -1,0 +1,74 @@
+{
+  "title":"eBook",
+  "heads": {
+    "day": "day",
+    "type": "type",
+    "account": "account",
+    "money": "money",
+    "firstClass": "firstClass",
+    "secondClass": "secondClass",
+    "note": "note"
+  },
+  "type": {
+    "spending": "spending",
+    "income": "income",
+    "transfer": "transfer"
+  },
+  "main": {
+    "addBill": "Add a bill",
+    "reactiveInfo": "firstClass | class | out account",
+    "currency": "USD",
+    "moneySum": "Spending sum",
+    "spendingByDay": "Spending(day)",
+    "successAdd": "You success add a bill!",
+    "removeInfo": "You hava removed a bill!"
+  },
+  "navigator": {
+    "normal": {
+      "name": "normal",
+      "addBill": "Bill",
+      "statistics": "Statistics"
+    },
+    "analysis": {
+      "name": "Analysis",
+      "spendingAnalysis": "Spending Analysis",
+      "incomeAnalysis": "Income Analysis"
+    },
+    "settings": {
+      "name": "Setting",
+      "basic": "Basic",
+      "category": "Category"
+    }
+  },
+  "statistics": {
+    "monthBegin": "Asset in the beginning of month",
+    "budgets": {
+      "name": "Budget",
+      "plan": "Plan",
+      "used": "Used",
+      "remain": "Remain",
+      "dailyPlan": "Daily plan",
+      "dailyRemain": "Daily remain",
+      "daily": "Daily budget"
+    },
+    "current": "Asset now",
+    "currentTotal": "Total assets now",
+    "monthBeginTotal": "Total assets in the beginning of month"
+  },
+  "spendingAnalysis": {
+    "name": "Spending analysis",
+    "spendingByFirstClass": "Spending analysis by first class"
+  },
+  "settings": {
+    "basic": {
+      "language": "Language",
+      "category": "Category",
+      "confirm": "Confirm",
+      "changeVal": "Add | Replace",
+      "addInfo": "add {add} in {type}",
+      "removeInfo": "remove {remove} in {type}",
+      "replaceInfo": "replace {from} with{to}",
+      "selectError": "No choice make!"
+    }
+  }
+}
