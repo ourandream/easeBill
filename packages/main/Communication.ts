@@ -13,7 +13,6 @@ writeJSONSync('./data/last_call_info.json', { year: current.getFullYear(), month
 
 
 async function dataAPiToRenderer() {
-    await DataApi.checkAutomatic()
     let api = new DataApi(current)
     if (lastCallInfo) {
         await api.dataInit(new Date(lastCallInfo.year, lastCallInfo.month))
@@ -70,6 +69,7 @@ async function dataAPiToRenderer() {
     ipcMain.handle('op:removeAutomaticBill', (event, index: number) =>
         DataApi.removeAutomaticBill(index)
     )
+    await DataApi.checkAutomatic()
 }
 
 export { dataAPiToRenderer }

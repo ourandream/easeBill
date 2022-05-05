@@ -123,7 +123,7 @@ let monthBeginTotal = computed(() => {
         return 0
     }
 })
-let newPlan = ref(0)
+let newPlan = ref(statistics.value.budgets.plan)
 let showSetPlan = ref(false)
 async function doSetPlan() {
     showSetPlan.value = false

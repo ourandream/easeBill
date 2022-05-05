@@ -1,27 +1,17 @@
 <template>
     <div class="text-center">
         <h2>{{ t('spendingAnalysis.name') }}</h2>
-        <Dropdown
-            v-model="type"
-            :options="analysisTypes"
-            option-label="name"
-            option-value="value"
-            @change="changeType"
-            class="mb-4"
-        />
+        <Dropdown v-model="type" :options="analysisTypes" option-label="name" option-value="value" @change="changeType"
+            class="mb-4" />
         <div style="margin:2.5% 2.5%">
             <DataTable :value="tableData" show-gridlines>
-                <Column v-for="i of heads" :header="i" :field="i" style="width: 25%;"></Column>
+                <Column v-for="i of heads" :header="i" :field="i" style="width: 10em;" resizableColumn 
+                columnResizeMode="expand"></Column>
             </DataTable>
         </div>
         <Splitter style="height: 300px;margin: 0 2.5%;">
             <SplitterPanel class="flex align-items-center justify-content-center">
-                <Chart
-                    type="bar"
-                    :data="chartDataAverage"
-                    style="width: 300px;height: 300px;"
-                    :height="300"
-                />
+                <Chart type="bar" :data="chartDataAverage" style="width: 300px;height: 300px;" :height="300" />
             </SplitterPanel>
             <SplitterPanel class="flex align-items-center justify-content-center">
                 <Chart type="pie" :data="chartData" style="width: 300px;" />
@@ -38,7 +28,7 @@ import { ref } from 'vue'
 const { t } = useI18n()
 let firstClassLabels: string[] = []
 let firstClassSpendings: number[] = []
-let firstClassAverage:number[]=[]
+let firstClassAverage: number[] = []
 for (let i of spendingsByFirstClass.value) {
     firstClassSpendings.push(i.money_sum)
     firstClassAverage.push(i.money_average)
@@ -83,11 +73,11 @@ async function changeType() {
         chartData.value.labels = firstClassLabels
         chartData.value.datasets[0].data = firstClassSpendings
         chartData.value.datasets[0].label = t('spendingAnalysis.spendingByFirstClass')
-        chartDataAverage.value.labels=firstClassLabels
-        chartDataAverage.value.datasets[0].data = firstClassSpendings
+        chartDataAverage.value.labels = firstClassLabels
+        chartDataAverage.value.datasets[0].data = firstClassAverage
         chartDataAverage.value.datasets[0].label = t('spendingAnalysis.spendingByFirstClass')
-        heads.value=[]
-        tableData.value=[{}]
+        heads.value = []
+        tableData.value = [{}]
         for (let i of spendingsByFirstClass.value) {
             heads.value.push(i.firstClass!)
             tableData.value[0][i.firstClass!] = i.money_sum.toFixed(2)
@@ -97,7 +87,7 @@ async function changeType() {
         spendingBySecondClass = await getSpendingBySecondClass(type.value)
         let labels: string[] = []
         let spendings: number[] = []
-        let averages:number[]=[]
+        let averages: number[] = []
         for (let i of spendingBySecondClass.value) {
             spendings.push(i.money_sum)
             averages.push(i.money_average)
@@ -109,8 +99,8 @@ async function changeType() {
         chartDataAverage.value.labels = labels
         chartDataAverage.value.datasets[0].data = averages
         chartDataAverage.value.datasets[0].label = type.value
-        heads.value=[]
-        tableData.value=[{}]
+        heads.value = []
+        tableData.value = [{}]
         for (let i of spendingBySecondClass.value) {
             heads.value.push(i.secondClass!)
             tableData.value[0][i.secondClass!] = i.money_sum.toFixed(2)

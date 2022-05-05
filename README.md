@@ -1,5 +1,5 @@
 <p align="center"><img src="./build/eBill.png"></img></p>
-<h2 align="center">轻记账</h2>
+<h3 align="center">轻记账</h3>
 <p align="center">个人资产管理软件</p>
 
 一个简易的永久免费的记账软件，针对普通用户，界面简单，无需专业的会计知识！
