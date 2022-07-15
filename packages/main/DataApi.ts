@@ -319,7 +319,7 @@ export default class DataApi {
 
 
   /**
-   * 获取当前数据
+   * 获取按日期顺序排列当前数据
    * @returns 当前数据的object形式
    */
   getData(): Bill[] {
