@@ -141,7 +141,6 @@ interface InputNumberInstance extends InstanceType<typeof InputNumber> {
 }
 let inputMoney = ref<InputNumberInstance | null>(null)
 function inputMoneyFocus() {
-    console.log(inputMoney.value!.$el.children[0])
     const p1 = inputMoney.value?.$el.children[0]
     nextTick(() => { p1!.focus() })
 }
@@ -191,7 +190,7 @@ let bill = ref<Bill>({
     day: (new Date()).getDate(),
     type: 'spending',
     account: category.value['accounts'][0],
-    money: 0,
+    money: null,
     firstClass: firstClasses.value[0],
     secondClass: '',
     note: ''

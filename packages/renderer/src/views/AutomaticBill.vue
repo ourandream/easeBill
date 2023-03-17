@@ -7,7 +7,7 @@
             </div>
         </template>
         <template #list="slotProp">
-            <div class="w-full">
+            <div class="w-full" style="padding:0 1%;">
                 <div style="width: 50%;" class="inline-block">
                     <h3>
                         {{ t('automaticBill.index') }}:

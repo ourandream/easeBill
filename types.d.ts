@@ -36,7 +36,7 @@ export global {
 		day: number
 		type: string
 		account: string
-		money: number
+		money: number | null
 		firstClass: string
 		secondClass: string
 		note: string

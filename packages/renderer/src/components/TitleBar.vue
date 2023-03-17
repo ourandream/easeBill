@@ -36,6 +36,7 @@ let win = {
 
 <style scoped>
 div {
+    background-color: white;
     -webkit-app-region: drag;
 }
 
