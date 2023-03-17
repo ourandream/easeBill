@@ -5,7 +5,7 @@
                 {{ item.label }}
             </div>
             <div v-else>
-                <router-link :to="item.to" class="p-menuitem-link" style="border-radius:10px;color: inherit;"
+                <router-link :to="item.to!" class="p-menuitem-link" style="border-radius:10px;color: inherit;"
                     @click="setActive(item.key!)">
                     <i :class="[item.icon, 'p-menuitem-icon']" style="color:inherit" />
                     {{ item.label }}
