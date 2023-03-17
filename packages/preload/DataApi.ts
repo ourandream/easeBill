@@ -1,4 +1,3 @@
-import { number } from "@intlify/core-base";
 import { ipcRenderer } from "electron";
 
 

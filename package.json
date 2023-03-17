@@ -1,13 +1,13 @@
 {
   "name": "ease-bill",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/main/index.cjs",
   "author": "ouran",
   "license": "MIT",
   "scripts": {
     "dev": "node scripts/watch.mjs",
     "prebuild": "vue-tsc --project packages/renderer/tsconfig.json --noEmit && node scripts/build.mjs",
-    "build": "electron-builder",
+    "build": "electron-builder --win",
     "debug": "npm run prebuild && vite ./packages/renderer"
   },
   "engines": {
